@@ -19,10 +19,13 @@
   "homepage": "https://github.com/mtpYa/algorithms#readme",
   "devDependencies": {
     "@types/node": "^8.0.41",
+    "browserify": "^14.4.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-typescript": "^3.2.2",
+    "tsify": "^3.0.3",
     "tslint": "^5.7.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.5.3",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

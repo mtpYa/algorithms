@@ -1,1 +1,1 @@
-// export const HELLO = 'hello from the second file';
+export const HELLO = 'hello from the second file';

@@ -1,14 +1,21 @@
 var gulp = require('gulp');
-var ts = require('gulp-typescript');
 var connect = require('gulp-connect');
+var browserify = require("browserify");
+var source = require('vinyl-source-stream');
+var tsify = require("tsify");
 
 gulp.task('scripts', function() {
-  return gulp.src('src/**/*.ts')
-    .pipe(ts({
-      noImplicitAny: true,
-      outFile: 'bundle.js'
-    }))
-    .pipe(gulp.dest('dist'));
+  return browserify({
+    basedir: '.',
+    debug: true,
+    entries: ['src/main.ts'],
+    cache: {},
+    packageCache: {}
+  })
+  .plugin(tsify)
+  .bundle()
+  .pipe(source('bundle.js'))
+  .pipe(gulp.dest('dist'));
 });
 
 gulp.task('connect', function() {
