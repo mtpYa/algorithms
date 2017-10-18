@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "gulp scripts",
+    "start": "gulp live_server"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   "homepage": "https://github.com/mtpYa/algorithms#readme",
   "devDependencies": {
     "@types/node": "^8.0.41",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-typescript": "^3.2.2",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3"
   }
