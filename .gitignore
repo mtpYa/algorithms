@@ -2,4 +2,3 @@ node_modules/
 .idea/
 .sonarlint/
 dist/bundle.js
-package-lock.json
