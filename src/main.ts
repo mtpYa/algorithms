@@ -2,6 +2,9 @@ const resultEl = document.querySelector('.result');
 const infoEl = document.querySelector('.additional-info');
 let result;
 let newValue: number;
+let testValue: string;
+
+testValue = 'Hello world';
 
 result = recursion(110);
 resultEl.innerHTML = `<h2>Recursion result: ${result}</h2>`;
