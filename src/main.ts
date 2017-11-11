@@ -3,6 +3,7 @@ const infoEl = document.querySelector('.additional-info');
 let result;
 let newValue: number;
 let testValue: string;
+let testValue2: boolean;
 
 testValue = 'Hello world';
 
