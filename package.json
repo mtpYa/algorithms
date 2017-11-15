@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "gulp scripts",
-    "start": "gulp live_server"
+    "start": "node src/main.js"
   },
   "repository": {
     "type": "git",
