@@ -1,3 +1,3 @@
-module.exports.showMessage = () => {
-  console.log('hello from node.js!');
+module.exports.showMessage = (msg) => {
+  console.log(msg);
 };
